@@ -1,0 +1,12 @@
+archivo = open("nombre.txt", "w")
+archivo.write("abc\n")
+archivo.write("cde")
+
+archivo.close()
+archivo = open("nombre.txt", "a")
+archivo.write("\nfgh")
+archivo.write("\nijk")
+archivo.close()
+archivo = open("nombre.txt", "r")
+lectura = archivo.read()
+print(lectura)
